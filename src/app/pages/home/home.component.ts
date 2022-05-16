@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit , OnDestroy{
     if(!this.isReady){
       await this.getMoviePopular();
     }else{
-      if(this.allData.length > 0){
+      if(this.allData?.length > 0){
         this.data = this.allData.slice( 0 , this.limit )
       }
     }
@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit , OnDestroy{
   async checkLocalStorage()
   {
     let data = await this.storage.getPopularMovies()
-    if(data.length > 0){
+    if(data?.length > 0){
       this.allData = data;
       this.isReady = true;
     }
