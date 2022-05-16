@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# cinemaPedia
+myFirstRepo
+=======
 # CinemaPedia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
@@ -25,3 +29,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+>>>>>>> e2abad94b393868cc7294177f2b86d211047c80a
