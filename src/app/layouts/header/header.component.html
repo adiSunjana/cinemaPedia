@@ -17,9 +17,16 @@
                 <div class="menu-item w-img rounded">
                     <img src="../../../assets/image/adi.JPG" alt="">
                 </div>
-                <div class="arrow">
-                    <img src="../../../assets/icon/arrow-down-white.png" alt="">
+                <div class="arrow" [ngClass]="{ 'arrow-open' : arrOpen }">
+                    <img src="../../../assets/icon/arrow-down-white.png" alt="" (click)="arrOpen = !arrOpen">
                 </div>
+            </div>
+
+            <div class="dropdown-account" [ngClass]="{ 'dropdown-open' : arrOpen }">
+                <ul>
+                    <li> Setting </li>
+                    <li> Logout </li>
+                </ul>
             </div>
         </nav>
     </header>
