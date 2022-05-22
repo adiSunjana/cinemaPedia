@@ -28,13 +28,53 @@ section.header{
     .menu{
         display: flex;
         width: 40%;
+        height: 100%;
+        position: relative;
+        place-items: center;
     }
 
     .menu-item{
-        display: inline-block;
+        
         margin-right: 2rem;
         color: cornsilk;
         text-decoration: none;
+        height: 100%;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        
+        position: relative;
+
+        &:after{
+            transition: .6s ease-in-out;
+            position: absolute;
+            bottom: 0;
+            content: "";
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            background-color: cornsilk;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        &:hover::after{
+            height: 5px;
+            width: 100%;
+        }
+    }
+
+    .menu-activate{
+        position: relative;
+        &:after{
+            position: absolute;
+            bottom: 0;
+            content: "";
+            height: 5px;
+            background-color: cornsilk;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
     }
 
     .account{

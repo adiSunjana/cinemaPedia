@@ -6,10 +6,11 @@
             </h1>
         </nav>
         <nav class="menu menu-list">
-            <a href="#" class="menu-item"> Home </a>
-            <a href="#" class="menu-item"> News </a>
-            <a href="#" class="menu-item"> About </a>
-            <a href="#" class="menu-item"> FAQ </a>
+            <ng-container *ngFor="let menu of menus">
+                <a [routerLink]="['/' + menu?.label]" 
+                   [routerLinkActive]="'menu-activate'" 
+                   class="menu-item"> {{ menu?.name }} </a>
+            </ng-container>
         </nav>
         <nav class="menu menu-right">
             <div class="menu-item search">Search</div>
