@@ -9,7 +9,7 @@
             <ng-container *ngFor="let menu of menus">
                 <a [routerLink]="['/' + menu?.label]" 
                    [routerLinkActive]="'menu-activate'" 
-                   class="menu-item"> {{ menu?.name }} </a>
+                   class="menu-item item-a"> {{ menu?.name }} </a>
             </ng-container>
         </nav>
         <nav class="menu menu-right">

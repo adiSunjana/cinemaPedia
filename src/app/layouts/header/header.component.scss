@@ -42,8 +42,12 @@ section.header{
         display: flex;
         place-content: center;
         place-items: center;
-        
         position: relative;
+
+        
+    }
+
+    .item-a{
 
         &:after{
             transition: .6s ease-in-out;
@@ -61,6 +65,7 @@ section.header{
             height: 5px;
             width: 100%;
         }
+
     }
 
     .menu-activate{
@@ -106,7 +111,7 @@ section.header{
         height: 15px;
         position: absolute;
         right: 0;
-        transition: .6s ease-in-out;
+        transition: .3s ease-in-out;
         cursor: pointer;
     }
 
@@ -117,14 +122,15 @@ section.header{
     .dropdown-account{
         position: absolute;
         text-align: center;
-        top: 65px;
         display: flex;
         width: 130px;
         height: 0;
         overflow: hidden;
-        transition: .6s ease-in-out;
+        transition: .3s ease-in-out;
         background-color: cornsilk;    
         place-items: center;
+        right: 30px;
+        top: 75px;
 
         ul{
             height: 100%;
